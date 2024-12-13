@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.card {
+    height: 80%;
+    width: 60%;
+    background-color: white;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 47% 53%;
+    grid-template-columns: 1fr;
+}
+
+.header {
+    grid-row: 1 / 2;
+    width: 100%;
+}
+
+.header2 {
+    margin: 7%;
+    line-height: 1.8rem;
+    color: hsl(218, 22%, 67%);
+}
+
+.header2 h2 {
+    color: #2bb3b1;
+    font-weight: 700;
+    font-size: 2em;    
+}
+
+.header2 h3 {
+    margin: 3% 0% 1% 0%;
+    font-weight: 700;
+    color: #bade3b;
+    font-size: 1.4em;    
+}
+
+.sub {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.price {
+    grid-column: 1 / 2;
+    background-color: #2bb3b1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price2 {
+    margin: 14%;
+    text-align: center;
+}
+
+.price2 h3 {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.sp {
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+#sp1 {
+    font-weight: 700;
+    font-size: 3em;
+    vertical-align: middle;
+}
+
+#sp2 {
+    padding-left: 3%;
+    color: #c0e2e2;
+}
+
+.price2 button {
+    width: 100%;
+    height: 7vh;
+    margin-top: 10%;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    border-radius: 1rem;
+    border-style: none;
+    background-color: #bade3b;
+}
+
+.info {
+    grid-column: 2 / 3;
+    background-color: #4abebd;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info2 {
+    margin: 14%;
+}
+
+.info2 h3 {
+    margin-bottom: 7%;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.info2 p {
+    color: hsl(204deg 100% 98.58% / 82%);
+    font-weight: 10;
+    line-height: 1.4em;
+}
+
+footer {
+    width: 100%;
+    height: 1%;
+    position: absolute;
+    top: 100%;
+}
+
+@media (max-width: 375px) {
+    * {
+        font-size: 8px;
+    }
+    .card {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr;
+    }
+    .header {
+        grid-row: 1 / 2;
+    }
+    .sub {
+        display: flex;
+        flex-direction: column;
+        grid-row: 2 / 3;
+    }
+    .price, .info {
+        grid-column: 1 / 2;
+        width: 100%;
+    }
+}

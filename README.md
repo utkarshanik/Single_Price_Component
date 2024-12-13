@@ -32,7 +32,8 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://utkarshanik.github.io/Single_Price_Component/)
+- Repo : https://github.com/utkarshanik/Single_Price_Component
 
 ## My process
 
